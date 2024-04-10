@@ -6,6 +6,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation"
+import { Head } from "next/head";
 // import LoginModal from "@/components/loginModal";
 import { axiosPost, axiosGet } from "../api";
 export default function Header(otpVerified) {
@@ -180,6 +181,10 @@ const city = pathSegments[1];
 
   return (
     <>
+    <Head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    </Head>
       <div>
         <Navbar
           expand="lg"
