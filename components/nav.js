@@ -82,6 +82,9 @@ const city = pathSegments[1];
     };
   }, []);
 
+
+  
+
   const handleClick = () => {
     setIsClicked(!isClicked);
   };
